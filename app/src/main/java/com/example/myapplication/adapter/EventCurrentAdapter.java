@@ -75,6 +75,7 @@ public class EventCurrentAdapter extends RecyclerView.Adapter<EventCurrentAdapte
                     Color.parseColor("#627AF7"), Color.parseColor("#EF566A"), Shader.TileMode.REPEAT);
             Shader shader1 = new LinearGradient(50, 0, event_name.getWidth(), 30, Color.parseColor("#EF566A"), Color.parseColor("#627AF7"), Shader.TileMode.CLAMP);
 
+
             event_name.getPaint().setShader(shader1);
             current_event_time = itemView.findViewById(R.id.current_time_text);
             current_event_loction = itemView.findViewById(R.id.current_location_text);

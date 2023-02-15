@@ -71,7 +71,9 @@ public class EventIncomingAdapter extends RecyclerView.Adapter<EventIncomingAdap
             event_name = itemView.findViewById(R.id.icm_event_name);
             Shader shader = new LinearGradient(0,0,0,event_name .getLineHeight(),
                     Color.parseColor("#627AF7"), Color.parseColor("#EF566A"), Shader.TileMode.REPEAT);
-            event_name.getPaint().setShader(shader);
+            Shader shader1 = new LinearGradient(50, 0, event_name.getWidth(), 30, Color.parseColor("#EF566A"), Color.parseColor("#627AF7"), Shader.TileMode.CLAMP);
+
+            event_name.getPaint().setShader(shader1);
             event_daystart = itemView.findViewById(R.id.icm_text_day_start);
             event_day_end = itemView.findViewById(R.id.icm_day_end);
             event_location = itemView.findViewById(R.id.icm_location_text);
