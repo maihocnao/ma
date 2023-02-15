@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -29,8 +30,9 @@
             android:lines="2"
             android:maxLines="2"
             android:text="FPT Korean Festival  (F-Festival)"
-            android:fontFamily="@font/roboto_medium"
-            android:textColor="@drawable/bg_event_itemgradient"
+            android:fontFamily="@font/roboto_regular"
+            android:textFontWeight="500"
+            android:textColor="#EF566A"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -58,11 +60,12 @@
             <TextView
                 android:id="@+id/end_text_day_start"
 
-                android:paddingLeft="5dp"
-                android:paddingTop="5dp"
+                android:paddingLeft="3dp"
+                android:paddingTop="3dp"
                 android:paddingEnd="0dp"
                 android:textAlignment="center"
                 android:text="14/02/2023"
+                android:textFontWeight="600"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:fontFamily="@font/inter_medium"
@@ -87,20 +90,21 @@
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:id="@+id/end_location_icon1"
-                android:src="@drawable/calendar_end"
+                android:src="@drawable/calendar1"
                 app:tint="#F78F1E"
 
                 />
 
             <TextView
                 android:id="@+id/end_text_day_end"
-                android:paddingLeft="5dp"
-                android:paddingTop="5dp"
+                android:paddingLeft="3dp"
+                android:paddingTop="3dp"
                 android:paddingEnd="0dp"
                 android:textAlignment="center"
                 android:text="20/02/2023"
                 android:fontFamily="@font/inter_medium"
                 android:textColor="@color/black"
+                android:textFontWeight="600"
                 android:textSize="16sp"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"/>
@@ -131,10 +135,13 @@
             <TextView
                 android:id="@+id/ended_location_text"
                 android:textAlignment="center"
+                android:paddingLeft="3dp"
+                android:paddingTop="3dp"
                 android:text="AL - 407"
                 android:textColor="@color/black"
                 android:fontFamily="@font/inter_medium"
                 android:textSize="16sp"
+                android:textFontWeight="600"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"/>
 
@@ -163,10 +170,11 @@
                 />
             <LinearLayout
 
-                android:paddingLeft="5dp"
+                android:paddingLeft="3dp"
+                android:paddingTop="3dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="3dp"
                 android:gravity="bottom"
                 android:orientation="horizontal"
                 android:layout_toRightOf="@id/end_people_icon"
@@ -183,6 +191,7 @@
                     android:fontFamily="@font/inter_medium"
                     android:textColor="#748394"
                     android:textSize="16sp"
+                    android:textFontWeight="600"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"/>
                 <TextView
@@ -191,6 +200,7 @@
                     android:paddingEnd="0dp"
                     android:textAlignment="center"
                     android:text="/200"
+                    android:textFontWeight="600"
                     android:fontFamily="@font/inter_medium"
                     android:textColor="@color/black"
                     android:textSize="16sp"

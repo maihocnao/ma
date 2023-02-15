@@ -73,7 +73,9 @@ public class EventCurrentAdapter extends RecyclerView.Adapter<EventCurrentAdapte
             event_name = itemView.findViewById(R.id.event_name);
             Shader shader = new LinearGradient(0,0,0,event_name .getLineHeight(),
                     Color.parseColor("#627AF7"), Color.parseColor("#EF566A"), Shader.TileMode.REPEAT);
-            event_name.getPaint().setShader(shader);
+            Shader shader1 = new LinearGradient(50, 0, event_name.getWidth(), 30, Color.parseColor("#EF566A"), Color.parseColor("#627AF7"), Shader.TileMode.CLAMP);
+
+            event_name.getPaint().setShader(shader1);
             current_event_time = itemView.findViewById(R.id.current_time_text);
             current_event_loction = itemView.findViewById(R.id.current_location_text);
             current_checked_people = itemView.findViewById(R.id.current_people_checked_text);
@@ -84,5 +86,5 @@ public class EventCurrentAdapter extends RecyclerView.Adapter<EventCurrentAdapte
 //            super(itemView);
 //
 
-        }
+    }
 }

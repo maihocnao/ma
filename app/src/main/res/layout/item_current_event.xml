@@ -26,11 +26,12 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
             android:layout_toRightOf="@id/img_event"
+            android:fontFamily="@font/roboto_regular"
             android:lines="2"
             android:maxLines="2"
             android:text="FPT Korean Festival  (F-Festival)"
-            android:fontFamily="@font/roboto_medium"
             android:textColor="@drawable/bg_event_itemgradient"
+            android:textFontWeight="500"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -57,12 +58,13 @@
 
             <TextView
                 android:id="@+id/current_time_text"
-
-                android:paddingLeft="5dp"
-                android:paddingTop="5dp"
+                android:textFontWeight="500"
+                android:paddingLeft="3dp"
+                android:paddingTop="3dp"
                 android:paddingEnd="0dp"
                 android:textAlignment="center"
                 android:text="6:00 - 8:00"
+                android:layout_marginBottom="3dp"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:fontFamily="@font/inter_medium"
@@ -93,10 +95,12 @@
 
             <TextView
                 android:id="@+id/current_location_text"
-                android:paddingLeft="5dp"
-                android:paddingTop="5dp"
+                android:paddingLeft="3dp"
+                android:paddingTop="3dp"
+                android:layout_marginBottom="3dp"
                 android:paddingEnd="0dp"
                 android:textAlignment="center"
+                android:textFontWeight="500"
                 android:text="AL - 407"
                 android:fontFamily="@font/inter_medium"
                 android:textColor="@color/black"
@@ -109,7 +113,7 @@
             android:id="@+id/current_people_lay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="3dp"
+
             android:gravity="bottom"
             android:orientation="horizontal"
             android:layout_toRightOf="@id/img_event"
@@ -125,40 +129,42 @@
                 android:src="@drawable/people2"
 
                 />
-        <LinearLayout
-            android:paddingTop="5dp"
-            android:paddingLeft="5dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:gravity="bottom"
-            android:orientation="horizontal"
-            android:layout_toRightOf="@id/current_people_icon"
-            android:layout_below="@id/current_location_lay"
-            android:contentDescription="time"
+            <LinearLayout
 
-            >
-            <TextView
-                android:id="@+id/current_people_checked_text"
+                android:paddingLeft="3dp"
+                android:paddingTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:layout_toRightOf="@id/current_people_icon"
+                android:layout_below="@id/current_location_lay"
+                android:contentDescription="time"
 
-                android:paddingEnd="0dp"
-                android:textAlignment="center"
-                android:text="120"
-                android:textColor="#00ff00"
-                android:textSize="16sp"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"/>
-            <TextView
-                android:id="@+id/current_people_text"
-                android:fontFamily="@font/inter_medium"
-                android:paddingEnd="0dp"
-                android:textAlignment="center"
-                android:text="/200"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"/>
-        </LinearLayout>
+                >
+                <TextView
+                    android:id="@+id/current_people_checked_text"
+                    android:textFontWeight="500"
+                    android:paddingEnd="0dp"
+                    android:textAlignment="center"
+                    android:text="120"
+                    android:textColor="#00ff00"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:id="@+id/current_people_text"
+                    android:fontFamily="@font/inter_medium"
+                    android:paddingEnd="0dp"
+                    android:textAlignment="center"
+                    android:text="/200"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textFontWeight="500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
 
 
         </LinearLayout>
@@ -169,10 +175,11 @@
             android:layout_height="match_parent"
             android:layout_below="@id/current_lay"
             android:layout_marginLeft="20dp"
-            android:layout_marginBottom="5dp"
+            android:layout_marginBottom="3dp"
             android:layout_toRightOf="@id/current_location_lay"
             android:backgroundTint="#FFD8C1"
             android:fontFamily="@font/poppins_medium"
+            android:textFontWeight="600"
             android:text="Scan"
             android:textAllCaps="false"
             android:textColor="@color/black"
