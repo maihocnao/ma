@@ -74,8 +74,13 @@ public class EventEndedAdapter extends RecyclerView.Adapter<EventEndedAdapter.Ev
             Shader shader = new LinearGradient(0,0,0,event_name .getLineHeight(),
                     Color.parseColor("#627AF7"), Color.parseColor("#EF566A"), Shader.TileMode.REPEAT);
             Shader shader1 = new LinearGradient(50, 0, event_name.getWidth(), 30, Color.parseColor("#EF566A"), Color.parseColor("#627AF7"), Shader.TileMode.CLAMP);
-
-            event_name.getPaint().setShader(shader1);
+            Shader textShader = new LinearGradient(
+                    0f, 0f, event_name.getPaint().measureText(event_name.getText().toString()), event_name.getTextSize(), new int[]{
+                    Color.parseColor("#627AF7"), Color.parseColor("#EF566A")
+            }, new float[]{0f, 1f}, Shader.TileMode.CLAMP
+            );
+            event_name.getPaint().setShader(textShader);
+            //event_name.getPaint().setShader(shader1);
             event_daystart = itemView.findViewById(R.id.end_text_day_start);
             event_day_end = itemView.findViewById(R.id.end_text_day_end);
             end_event_location = itemView.findViewById(R.id.ended_location_text);

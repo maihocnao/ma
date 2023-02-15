@@ -48,15 +48,37 @@
             android:contentDescription="time"
 
             >
-            <ImageView
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:id="@+id/end_time_icon"
-                android:src="@drawable/calendar1"
 
-                />
+                <ImageView
 
+                    android:id="@+id/end_time_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/calendar1"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <ImageView
+                    android:id="@+id/imageViewbox"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:srcCompat="@drawable/baseline_check_box_outline_blank_24" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
             <TextView
                 android:id="@+id/end_text_day_start"
 
@@ -85,15 +107,38 @@
             android:contentDescription="location"
 
             tools:ignore="NotSibling">
-            <ImageView
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:id="@+id/end_location_icon1"
-                android:src="@drawable/calendar1"
-                app:tint="#F78F1E"
+                <ImageView
 
-                />
+                    android:id="@+id/end_location_icon1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/calendar1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="#F78F1E" />
+
+                <ImageView
+                    android:id="@+id/imageViewcheck"
+                    android:layout_width="14dp"
+                    android:layout_height="12dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:srcCompat="@drawable/baseline_check_24" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
 
             <TextView
                 android:id="@+id/end_text_day_end"
@@ -108,6 +153,8 @@
                 android:textSize="16sp"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"/>
+
+
 
         </LinearLayout>
         <LinearLayout
