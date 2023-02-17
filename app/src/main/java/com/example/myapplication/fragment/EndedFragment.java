@@ -57,7 +57,7 @@ public class EndedFragment extends Fragment {
     private List<Event> getListEvent() {
         List<Event> list = new ArrayList<>();
         //String eventName, int imgScr, String time, String dayStart, String dayEnd, String location, int checkedPeople, int amountPeople
-        list.add(new Event("FPT Korean Festival  (F-Festival)",R.drawable.img_2,"6:00 - 8:00", "20/1/2023","21/1/2023","AL - 407",120,200));
+        list.add(new Event("FPT Korean Festival LinearLayoutManager  Fess",R.drawable.img_2,"6:00 - 8:00", "20/1/2023","21/1/2023","AL - 407",120,200));
         list.add(new Event("FPT Korean Festival  (F-Festival)",R.drawable.img_2,"6:00 - 8:00", "20/1/2023","21/1/2023", "AL - 407",130,200));
         list.add(new Event("FPT Korean Festival  ",R.drawable.img_2,"6:00 - 8:00", "2/2/2023","21/2/2023", "AL - 417",123,400));
         list.add(new Event("FPT Korean Festival  (F-Festival)",R.drawable.img_2,"6:00 - 8:00", "20/1/2023","21/1/2023", "AL - 407",110,200));
